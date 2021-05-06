@@ -30,3 +30,16 @@
 .notification:not(:last-child) {
     margin-bottom: 0;
 }
+.field.is-grouped > .control:not(:last-child) {
+    margin: 0;
+}
+
+.button {
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+}
+
+.is-outlined {
+    border: 0;
+}

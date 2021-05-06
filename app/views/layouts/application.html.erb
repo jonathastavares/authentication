@@ -36,11 +36,17 @@
       <div id="navbarExample" class="navbar-menu">
         <div class="navbar-end">
           <div class="field is-grouped">
+            <% if user_signed_in? %>
+              <p class="control">
+                <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"button is-info is-outlined is-inverted", data: { confirm: "Are you sure you want to Log Out?" } %>
+              </p>
+            <% else %>
+              <p class="control">
+                <%= link_to "Log In", new_user_session_path, class:"button is-info is-outlined is-inverted" %>
+              </p>
+            <% end %>
             <p class="control">
-              <%= link_to "New Tweeet", new_tweeet_path, class:"button is-info is-inverted" %>
-            </p>
-            <p class="control">
-              Sign up
+              <%= link_to "Sign Up", new_user_registration_path, class:"button is-info is-outlined is-inverted" %>
             </p>
           </div>
         </div>
