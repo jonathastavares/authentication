@@ -22,11 +22,36 @@
 }
 
 body {
-    background-image: url(/app/assets/images/background.jpg);
+    background-image: linear-gradient(to top left, black 5%, white);
     font-family: titulo;
+    height: 1500px;
 }
 
-.navbar-brand .title {
+h2, h1 {
+    color: black;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.links {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.content h2 {
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+}
+
+.sign-up {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+.navbar-brand .title, .content .title {
     color: white;
     font-size: 3em;
 }
@@ -35,15 +60,19 @@ body {
     color: white;
 }
 
+.icon > i:hover {
+    color: black;
+}
+
 .panel {
-    background-image: linear-gradient(rgb(146, 58, 7) 30%, rgb(78, 25, 9));
+    background-color: rgba(36, 36, 36, 0.9);
 }
 
 .panel-heading {
-    background-color: rgb(78, 25, 9);
+    background-color: rgb(36, 36, 36);
     color: white;
     font-weight: 900;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .panel-block {
@@ -52,28 +81,51 @@ body {
     font-weight: 600;
 }
 
+.textarea {
+    background-color: rgb(18, 18, 18);
+    color: white;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
 .textarea::placeholder {
-    color: rgba(78, 25, 9, 0.55);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .box {
-    background-image: linear-gradient(rgb(146, 58, 7) 1%, rgb(78, 25, 9));
+    background-image: linear-gradient(to bottom right, black 1%, rgb(70, 70, 70) 99%);
 }
 
 .panel-block:hover {
-    background-image: linear-gradient(rgb(139, 58, 0) 60%, rgb(71, 25, 2));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9) 75%, rgba(36, 36, 36, 0.9));
     color: white;
     transform: scale(0.98);
 }
 
 .label {
-    color: white;
+    color: black;
     font-size: 1.2em;
+}
+
+.form-label {
+    color: white;
+    font-size: 2em;
+}
+
+.checkbox, .hint {
+    color: black;
+    font-size: 1.1em;
+}
+
+.input {
+    background-color: black;
+    color: white;
+    font-size: 1em;
 }
 
 .content > p {
     color: white;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 600;
     text-align: center;
 }
@@ -89,16 +141,20 @@ body {
     margin: 0;
     border-radius: 0;
     font-weight: 600;
-    background-image: linear-gradient(rgb(146, 58, 7) 60%, rgb(78, 25, 9));
+    background-image: linear-gradient(black 75%, gray);
+}
+
+.post-btn {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9) 1%, gray);
 }
 
 .button:hover {
-    transform: scale(0.99);
+    transform: scale(0.98);
 }
 
 .navbar-item:hover, .button:hover {
     color: white;
-    background-image: linear-gradient(rgb(139, 58, 0) 60%, rgb(71, 25, 2));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.915) 75%, rgba(128, 128, 128, 0.915));
 }
 
 .image {
@@ -137,5 +193,5 @@ body {
 }
 
 .navbar-background {
-    background-image: linear-gradient(rgb(146, 58, 7) 60%, rgb(78, 25, 9));
+    background-image: linear-gradient(black 75%, gray);
 }
