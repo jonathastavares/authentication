@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# rubocop:disable Layout/DotPosition
 APP_ROOT = File.expand_path('..', __dir__)
 Dir.chdir(APP_ROOT) do
   yarn = ENV['PATH'].split(File::PATH_SEPARATOR).
@@ -15,3 +16,4 @@ Dir.chdir(APP_ROOT) do
     exit 1
   end
 end
+# rubocop:enable Layout/DotPosition
