@@ -16,8 +16,89 @@
 
 @import "bulma";
 
+@font-face {
+    font-family: 'titulo';
+    src: url(/app/assets/fonts/Royante.ttf);
+}
+
+body {
+    background-image: url(/app/assets/images/background.jpg);
+    font-family: titulo;
+}
+
 .navbar-brand .title {
     color: white;
+    font-size: 3em;
+}
+
+.icon > i {
+    color: white;
+}
+
+.panel {
+    background-image: linear-gradient(rgb(146, 58, 7) 30%, rgb(78, 25, 9));
+}
+
+.panel-heading {
+    background-color: rgb(78, 25, 9);
+    color: white;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.panel-block {
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.textarea::placeholder {
+    color: rgba(78, 25, 9, 0.55);
+}
+
+.box {
+    background-image: linear-gradient(rgb(146, 58, 7) 1%, rgb(78, 25, 9));
+}
+
+.panel-block:hover {
+    background-image: linear-gradient(rgb(139, 58, 0) 60%, rgb(71, 25, 2));
+    color: white;
+    transform: scale(0.98);
+}
+
+.label {
+    color: white;
+    font-size: 1.2em;
+}
+
+.content > p {
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.level {
+    justify-content: center;
+}
+
+.button {
+    color: white;
+    border: 0;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    font-weight: 600;
+    background-image: linear-gradient(rgb(146, 58, 7) 60%, rgb(78, 25, 9));
+}
+
+.button:hover {
+    transform: scale(0.99);
+}
+
+.navbar-item:hover, .button:hover {
+    color: white;
+    background-image: linear-gradient(rgb(139, 58, 0) 60%, rgb(71, 25, 2));
 }
 
 .image {
@@ -34,12 +115,6 @@
     margin: 0;
 }
 
-.button {
-    height: 100%;
-    margin: 0;
-    border-radius: 0;
-}
-
 .is-outlined {
     border: 0;
 }
@@ -53,4 +128,14 @@
     justify-content: center;
     align-items: center;
     margin: 0 8px;
+}
+
+.notice, .alert {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar-background {
+    background-image: linear-gradient(rgb(146, 58, 7) 60%, rgb(78, 25, 9));
 }

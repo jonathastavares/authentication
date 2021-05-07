@@ -1,9 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Tweeet:</strong>
+  <strong>Secret:</strong>
   <%= @tweeet.tweeet %>
 </p>
-
-<%= link_to 'Edit', edit_tweeet_path(@tweeet) %> |
+<% if current_user == @tweeet.user %>
+  <p class="control">
+    <%= link_to 'Edit', edit_tweeet_path(@tweeet) %>
+  </p>
+  <% end %>
 <%= link_to 'Back', tweeets_path %>

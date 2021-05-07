@@ -3,7 +3,7 @@
     <div class="columns is-centered">
       <div class="column is-4">
         <h2 class="title is-2">Forgot your password?</h2>
-        <%= simple_form_for(resource, as: resource_name, url: new_user_registration_path(resource_name)) do |f| %>
+        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= f.error_notification %>
           <div class="field">
             <div class="control">

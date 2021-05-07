@@ -13,19 +13,19 @@
 
   <body>
     <% if flash[:notice] %>
-      <div class="notification is-primary global-notification">
+      <div class="notification is-primary global-notification flashes">
         <p class="notice"><%= notice %></p>
       </div>
     <% end %>
     <% if flash[:alert] %>
-      <div class="notification is-danger global-notification">
+      <div class="notification is-danger global-notification flashes">
         <p class="alert"><%= alert %></p>
       </div>
     <% end %>
-    <nav class="navbar is-info">
+    <nav class="navbar is-info navbar-background">
       <div class="navbar-brand">
         <%= link_to root_path, class: "navbar-item" do %>
-          <h1 class="title is-5">Twittter</h1>
+          <h1 class="title is-5">Secret!</h1>
         <% end %>
         <div class="navbar-burguer burguer" data-target="navbarExample">
           <span></span>
@@ -41,15 +41,15 @@
                 <span class="is-info login">Welcome<strong class="login"><%= current_user.name %></strong></span>
               </p>
               <p class="control">
-                <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"button is-info is-outlined is-inverted", data: { confirm: "Are you sure you want to Log Out?" } %>
+                <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"button", data: { confirm: "Are you sure you want to Log Out?" } %>
               </p>
             <% else %>
               <p class="control">
-                <%= link_to "Log In", new_user_session_path, class:"button is-info is-outlined is-inverted" %>
+                <%= link_to "Log In", new_user_session_path, class:"button" %>
               </p>
             <% end %>
             <p class="control">
-              <%= link_to "Sign Up", new_user_registration_path, class:"button is-info is-outlined is-inverted" %>
+              <%= link_to "Sign Up", new_user_registration_path, class:"button" %>
             </p>
           </div>
         </div>
