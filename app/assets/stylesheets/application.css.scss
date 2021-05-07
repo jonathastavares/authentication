@@ -23,11 +23,12 @@
 
 body {
   background-image: linear-gradient(to top left, black 5%, white);
-  font-family: titulo;
+  font-family: 'titulo';
   height: 1500px;
 }
 
-h2, h1 {
+h2,
+h1 {
   color: black;
   font-size: 3em;
   font-weight: 900;
@@ -52,7 +53,8 @@ h2, h1 {
   text-decoration: underline;
 }
 
-.navbar-brand .title, .content .title {
+.navbar-brand .title,
+.content .title {
   color: white;
   font-size: 3em;
 }
@@ -113,7 +115,8 @@ h2, h1 {
   font-size: 2em;
 }
 
-.checkbox, .hint {
+.checkbox,
+.hint {
   color: black;
   font-size: 1.1em;
 }
@@ -153,13 +156,15 @@ h2, h1 {
   transform: scale(0.98);
 }
 
-.navbar-item:hover, .button:hover {
+.navbar-item:hover,
+.button:hover {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.915) 75%, rgba(128, 128, 128, 0.915));
 }
 
 .image {
   border-radius: 50%;
+
   img {
     border-radius: 50%;
   }
@@ -168,6 +173,7 @@ h2, h1 {
 .notification:not(:last-child) {
   margin-bottom: 0;
 }
+
 .field.is-grouped > .control:not(:last-child) {
   margin: 0;
 }
@@ -179,7 +185,6 @@ h2, h1 {
 .login {
   color: white;
   height: 100%;
-  margin: 0;
   border-radius: 0;
   display: flex;
   justify-content: center;
@@ -187,7 +192,8 @@ h2, h1 {
   margin: 0 8px;
 }
 
-.notice, .alert {
+.notice,
+.alert {
   text-align: center;
   font-size: 20px;
   font-weight: 700;
