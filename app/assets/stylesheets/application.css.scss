@@ -17,181 +17,182 @@
 @import "bulma";
 
 @font-face {
-    font-family: 'titulo';
-    src: url(/app/assets/fonts/Royante.ttf);
+  font-family: 'titulo';
+  src: url(/app/assets/fonts/Royante.ttf);
 }
 
 body {
-    background-image: linear-gradient(to top left, black 5%, white);
-    font-family: titulo;
-    height: 1500px;
+  background-image: linear-gradient(to top left, black 5%, white);
+  font-family: titulo;
+  height: 1500px;
 }
 
 h2, h1 {
-    color: black;
-    font-size: 3em;
-    font-weight: 900;
+  color: black;
+  font-size: 3em;
+  font-weight: 900;
 }
 
 .links {
-    color: black;
-    text-decoration: none;
-    font-size: 1.2em;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
 }
+
 .content h2 {
-    color: white;
-    font-size: 3em;
-    font-weight: 900;
-    text-align: center;
+  color: white;
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
 }
 
 .sign-up {
-    color: white;
-    font-size: 1.1em;
-    text-decoration: underline;
+  color: white;
+  font-size: 1.1em;
+  text-decoration: underline;
 }
 
 .navbar-brand .title, .content .title {
-    color: white;
-    font-size: 3em;
+  color: white;
+  font-size: 3em;
 }
 
 .icon > i {
-    color: white;
+  color: white;
 }
 
 .icon > i:hover {
-    color: black;
+  color: black;
 }
 
 .panel {
-    background-color: rgba(36, 36, 36, 0.9);
+  background-color: rgba(36, 36, 36, 0.9);
 }
 
 .panel-heading {
-    background-color: rgb(36, 36, 36);
-    color: white;
-    font-weight: 900;
-    font-size: 1.4em;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  font-weight: 900;
+  font-size: 1.4em;
 }
 
 .panel-block {
-    color: white;
-    font-size: 1em;
-    font-weight: 600;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 .textarea {
-    background-color: rgb(18, 18, 18);
-    color: white;
-    font-size: 1.3em;
-    font-weight: 400;
+  background-color: rgb(18, 18, 18);
+  color: white;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 .textarea::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .box {
-    background-image: linear-gradient(to bottom right, black 1%, rgb(70, 70, 70) 99%);
+  background-image: linear-gradient(to bottom right, black 1%, rgb(70, 70, 70) 99%);
 }
 
 .panel-block:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9) 75%, rgba(36, 36, 36, 0.9));
-    color: white;
-    transform: scale(0.98);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9) 75%, rgba(36, 36, 36, 0.9));
+  color: white;
+  transform: scale(0.98);
 }
 
 .label {
-    color: black;
-    font-size: 1.2em;
+  color: black;
+  font-size: 1.2em;
 }
 
 .form-label {
-    color: white;
-    font-size: 2em;
+  color: white;
+  font-size: 2em;
 }
 
 .checkbox, .hint {
-    color: black;
-    font-size: 1.1em;
+  color: black;
+  font-size: 1.1em;
 }
 
 .input {
-    background-color: black;
-    color: white;
-    font-size: 1em;
+  background-color: black;
+  color: white;
+  font-size: 1em;
 }
 
 .content > p {
-    color: white;
-    font-size: 1.5em;
-    font-weight: 600;
-    text-align: center;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
 }
 
 .level {
-    justify-content: center;
+  justify-content: center;
 }
 
 .button {
-    color: white;
-    border: 0;
-    height: 100%;
-    margin: 0;
-    border-radius: 0;
-    font-weight: 600;
-    background-image: linear-gradient(black 75%, gray);
+  color: white;
+  border: 0;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  font-weight: 600;
+  background-image: linear-gradient(black 75%, gray);
 }
 
 .post-btn {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9) 1%, gray);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9) 1%, gray);
 }
 
 .button:hover {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .navbar-item:hover, .button:hover {
-    color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.915) 75%, rgba(128, 128, 128, 0.915));
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.915) 75%, rgba(128, 128, 128, 0.915));
 }
 
 .image {
+  border-radius: 50%;
+  img {
     border-radius: 50%;
-    img {
-        border-radius: 50%;
-    }
+  }
 }
 
 .notification:not(:last-child) {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .field.is-grouped > .control:not(:last-child) {
-    margin: 0;
+  margin: 0;
 }
 
 .is-outlined {
-    border: 0;
+  border: 0;
 }
 
 .login {
-    color: white;
-    height: 100%;
-    margin: 0;
-    border-radius: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 8px;
+  color: white;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
 }
 
 .notice, .alert {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .navbar-background {
-    background-image: linear-gradient(black 75%, gray);
+  background-image: linear-gradient(black 75%, gray);
 }
