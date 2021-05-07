@@ -14,9 +14,13 @@
 
 > The page above is the login page.
 
-![screenshot](/screenshot2.jpg)
+![screenshot](/screenshot3.jpg)
 
 > The page above is the index page shown to users after authentication.
+
+![screenshot](/screenshot3.jpg)
+
+> The page above is the user registration page.
 
 ## Built With
 
