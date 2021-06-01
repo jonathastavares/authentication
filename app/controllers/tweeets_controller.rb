@@ -12,7 +12,6 @@ class TweeetsController < ApplicationController
     @tweeet = Tweeet.new
   end
 
-
   # POST /tweeets or /tweeets.json
   def create
     @tweeet = current_user.tweeets.build(tweeet_params)
@@ -30,20 +29,17 @@ class TweeetsController < ApplicationController
 
   private
 
-    # Use callbacks to share common setup or constraints between actions.
-    def set_tweeet
-      @tweeet = Tweeet.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_tweeet
+    @tweeet = Tweeet.find(params[:id])
+  end
 
-    # Only allow a list of trusted parameters through.
-    def tweeet_params
-      params.require(:tweeet).permit(:tweeet)
-    end
+  # Only allow a list of trusted parameters through.
+  def tweeet_params
+    params.require(:tweeet).permit(:tweeet)
+  end
 
-    def require_user
-      if !user_signed_in?
-        redirect_to user_session_path, alert: 'You need to sign in or sign up before continuing.'
-      end
-    end
-
+  def require_user
+    redirect_to user_session_path, alert: 'You need to sign in or sign up before continuing.' unless user_signed_in?
+  end
 end
