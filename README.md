@@ -34,9 +34,23 @@
 
 - Make sure you have Ruby and Rails installed on your computer. If you don't have it, simply install [Ruby](https://www.ruby-lang.org/pt/documentation/installation/), and follow this tutorial to install [rails](https://gorails.com/setup/ubuntu/20.10).
 
-- Then, clone this repository to your computer.
+- Use the terminal to navigate to a folder where you want to clone the files, for example C:
+
+- Then, clone this repository to your computer. You clone a repository with:
+
+> git clone https://github.com/jonathastavares/authentication.git
+
+- Remember that the files will be cloned to the current directory where you are at.
 
 - After cloning the repository, navigate through the command line to the folder where the repository was cloned, and run the command 'bundle install'.
+
+- Now it is time to create and migrate our database, run the following command:
+
+> rake db:setup
+
+- Then run the following command:
+
+> rake db:migrate
 
 - After installing all dependencies, use the command 'rails server' to start the server for the application.
 

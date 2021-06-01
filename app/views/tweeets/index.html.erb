@@ -1,23 +1,7 @@
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
-    <% if user_signed_in? %>
-      <%= render 'feed' %>
-    <% else %>
-      <div class="box">
-        <article class="media">
-          <div class="media-content">
-            <div class="content">
-              <h2> How does Secret works? </h2>
-              <p> At secret, you can post anything you want anonymously, you do have to create an account to post, but your information will be safe with us! </p>
-              <p> You will see posts from people who lives near to you, but you won't know who posted something, all you will know is what people are talking about. </p>
-              <p> If you post something, don't worry, we won't let people see your name or username on your post </p>
-              <p> All you need is to <%= link_to "create an account", new_user_registration_path, class: "sign-up" %>, let's do it! </p>
-            </div>
-          </div>
-        </article>
-      </div>
-    <% end %>
+    <%= render 'feed' %>
     </div>
   </div>
 </section>
