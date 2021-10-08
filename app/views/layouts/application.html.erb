@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authentication</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <% if flash[:notice] %>
+      <div class="notification is-primary global-notification flashes">
+        <p class="notice"><%= notice %></p>
+      </div>
+    <% end %>
+    <% if flash[:alert] %>
+      <div class="notification is-danger global-notification flashes">
+        <p class="alert"><%= alert %></p>
+      </div>
+    <% end %>
+    <nav class="navbar is-info navbar-background">
+      <div class="navbar-brand">
+        <%= link_to root_path, class: "navbar-item" do %>
+          <h1 class="title is-5">Mystery!</h1>
+        <% end %>
+        <div class="navbar-burguer burguer" data-target="navbarExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="navbarExample" class="navbar-menu">
+        <div class="navbar-end">
+          <div class="field is-grouped">
+            <% if user_signed_in? %>
+              <p class="control">
+                <span class="is-info login">Welcome<strong class="login"><%= current_user.name %></strong></span>
+              </p>
+              <p class="control">
+                <%= link_to "Edit Account", edit_user_registration_path, class:"button" %>
+              </p>
+              <p class="control">
+                <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"button", data: { confirm: "Are you sure you want to Log Out?" } %>
+              </p>
+            <% else %>
+              <p class="control">
+                <%= link_to "Log In", new_user_session_path, class:"button" %>
+              </p>
+            <% end %>
+            <p class="control">
+              <%= link_to "Sign Up", new_user_registration_path, class:"button" %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <%= yield %>
+  </body>
+</html>
